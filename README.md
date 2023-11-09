@@ -1,10 +1,10 @@
-# AI Swiss Legal Assistant
+# AI Swiss Legal Assistant 🇨🇭 👩‍⚖️ 🤖
 
 This is a simple conversational-ui RAG (retrieval augmented generation) based on the Swiss Code of Obligations.
 
 > It was created a starting point of the Ginetta Challenge at the women++ [Hack'n'Lead hackathon](www.womenplusplus.ch/hackandlead) November 2023
 
-## How to Use
+## ▶️ How to Use
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
@@ -15,13 +15,13 @@ yarn create next-app --example https://github.com/ginetta/swiss-legal-conversati
 
 To run the example locally you need to:
 
-## Run Ollama
+## 🦙 Run Ollama
 
 1. [Download Ollama](https://ollama.ai/download) and install it locally
 2. `ollama run mistral` to download and install the model locally (Requires 4.1GB and 8GB of RAM)
 3. Open <http://localhost:11434> to check if _Ollama is running_
 
-## Setup Qdrant Vector Database
+## 💾 Setup Qdrant Vector Database
 
 1. `docker pull qdrant/qdrant`
 1. `docker run -p 6333:6333 qdrant/qdrant`
@@ -46,14 +46,14 @@ curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
     -F 'snapshot=swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25.snapshot'
 ```
 
-## Run the App
+## 👩🏽‍💻 Run the App
 
 1. `yarn install` to install the required dependencies
 1. Copy the file `.env.local.example` in the project and rename it to `.env`. Verify if all environment variables are correct
 1. `yarn dev` to launch the development server
 1. Go to <http://localhost:3000> and try out the app
 
-## Learn More
+## 👩🏽‍🏫 Learn More
 
 To learn more about LangChain, OpenAI, Next.js, and the Vercel AI SDK take a look at the following resources:
 
