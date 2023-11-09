@@ -30,7 +30,15 @@ yarn create next-app --example https://github.com/brunnolou/next-langchain-rag-o
 pnpm create next-app --example https://github.com/brunnolou/next-langchain-rag-ollama
 ```
 
-To run the example locally you need to:
+There is two different ways to setup this project:
+
+1. Install Ollama & Qdrant locally _(Ollama desktop app is currently is only available for Mac and Linux)_ - Ollama will take advantage of your GPU to run the model
+1. Use the [Docker Compose](https://docs.docker.com/compose/) file to run Ollama & Qdrant in containers (just run  in a terminal in the project directory) - easier setup, but Ollama will run on CPU
+
+## 🐳 Setup & Run Docker Compose
+
+1. `docker compose up -d` to pull & run the containers
+1. `docker compose exec ollama ollama run mistral` to download & install the mistral model
 
 ## Run Ollama
 
