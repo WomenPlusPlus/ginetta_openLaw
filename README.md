@@ -53,7 +53,7 @@ To run the example locally you need to:
 ```shell
 curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
     -H 'Content-Type:multipart/form-data' \
-    -F 'snapshot=@swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25.snapshot'
+    -F 'snapshot=swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25.snapshot'
 ```
 
 ## Run the app
