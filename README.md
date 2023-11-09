@@ -67,8 +67,8 @@ curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
 
 To learn more about LangChain, OpenAI, Next.js, and the Vercel AI SDK take a look at the following resources:
 
-- [Vercel AI SDK docs](https://sdk.vercel.ai/docs) - learn more about the Vercel AI SDK
 - [LangChain Documentation](https://js.langchain.com/docs) - learn about LangChain
-- [Ollama](https://ollama.ai) - learn about Ollama features, models, and API.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Qdrant Documentation](https://qdrant.tech/documentation/) - learn about Next.js features and API.
+- [Ollama](https://ollama.ai/) - learn about Ollama features, models, and API
+- [Qdrant Documentation](https://qdrant.tech/documentation/) - learn about Qdrant
+- [Vercel AI SDK docs](https://sdk.vercel.ai/docs) - learn mode about the Vercel AI SDK
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
