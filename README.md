@@ -1,10 +1,10 @@
-# AI Swiss legal assistant
+# AI Swiss Legal Assistant
 
 This is a simple conversational-ui RAG (retrieval augmented generation) based on the Swiss Code of Obligations.
 
 > It was created a starting point of the Ginetta Challenge at the women++ [Hack'n'Lead hackathon](www.womenplusplus.ch/hackandlead) November 2023
 
-## How to use
+## How to Use
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
@@ -46,7 +46,7 @@ curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
     -F 'snapshot=swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25.snapshot'
 ```
 
-## Run the app
+## Run the App
 
 1. `yarn install` to install the required dependencies
 1. Copy the file `.env.local.example` in the project and rename it to `.env`. Verify if all environment variables are correct
