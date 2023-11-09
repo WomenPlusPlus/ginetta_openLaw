@@ -1,6 +1,6 @@
 # [Hack n Lead](https://womenplusplus.ch/hacknlead)
 
-===
+OpenLaw : The LawBot made for you.
 
 ## Steps
 
