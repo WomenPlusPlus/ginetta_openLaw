@@ -2,6 +2,7 @@ version: '3.4'
 
 volumes:
   ollama: {}
+  snapshots: {}
 
 services:
   ollama:
@@ -13,5 +14,7 @@ services:
     command: serve
   qdrant:
     image: qdrant/qdrant:latest
+    volumes:
+      - snapshots:/snapshots
     ports:
       - 6333:6333
