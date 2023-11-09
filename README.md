@@ -9,7 +9,7 @@ This is a simple conversational-ui RAG (retrieval augmented generation) based on
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-yarn create next-app --example https://github.com/brunnolou/next-langchain-rag-ollama
+yarn create next-app --example https://github.com/ginetta/swiss-legal-conversational-ui
 ```
 
 
