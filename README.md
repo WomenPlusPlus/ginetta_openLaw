@@ -4,6 +4,14 @@ This is a simple conversational-ui RAG (retrieval augmented generation) based on
 
 > It was created a starting point of the Ginetta Challenge at the women++ [Hack'n'Lead hackathon](www.womenplusplus.ch/hackandlead) November 2023
 
+## ℹ️ Instructions
+
+1. Use this repository as a template (or Fork it)
+2. Add your team members as contributors
+3. Put your presentation in the `docs/` folder
+4. This repository **must** be open source (and licensed) in order to submit
+5. Add the tag `hack-n-lead` to the repo description
+
 ## ▶️ Setup
 
 There is two different ways to setup this project:
