@@ -42,16 +42,16 @@ Checklist:
 # 3. Submit
 
 Checklist:
+<<<<<<< HEAD
 
 - [ ] Add your code
 - [ ] Add presentation
 - [ ] Add full names of team members!
 - [ ] Add `hnl2023` to the topics of the repo
-
----
-
-# 5. NOTHING!
-
-Sit back and wait to pitch your project
+* [ ] Add you code
+* [ ] Add presentation
+* [ ] Add full names of team members!
+* [ ] Add `hnl2023` to the topics of the repo
+>>>>>>> frontendframe
 
 ![](https://media.giphy.com/media/4IbpJdUNKn5Ti/giphy.gif)

@@ -1,0 +1,51 @@
+id,name,language,employed_type,specialty_areas,location_km,price_per_hour,winning_rate,review,provono,n_experience,earlist_available_within_n_day,average_response_hour,y,scores
+1,Jean-Pierre Montandon,"['DE', 'EN', 'FR', 'IT']",Conrad Sàrl. Law Group,"['Employment and Labor', 'Inheritance and Succession']",8,71,0.6,0.0,0,9,10,37,0,0.0656928234287883
+2,Sandra Friedli,"['DE', 'EN', 'FR', 'IT']",Polla SA Law,"['Insurance', 'Tort']",50,140,0.98,0.0,0,7,15,44,0,0.25938321315244056
+3,George Jacot-Guillarmod,"['DE', 'IT']",Curdy SA ,"['Employment and Labor', 'Inheritance and Succession', 'Intellectual Property']",2,32,0.92,3.5,1,24,8,10,1,2.8892347158391933
+4,Mirjana Bourquard,"['DE', 'EN', 'FR']",Cosendey ,"['Insurance', 'Intellectual Property']",48,133,0.72,2.0,0,7,26,59,0,1.4581686473932498
+5,Raquel Leunberger,"['EN', 'IT']",Freelancer,"['Banking and Finance', 'Employment and Labor', 'Property (Real Estate)']",40,111,0.32,2.0,1,10,0,30,0,1.2697899460962636
+6,Line Quartier,"['DE', 'EN', 'FR', 'IT']","Maurer, Schlatter and Keller Firm",['Inheritance and Succession'],95,101,0.63,1.5,1,13,8,42,0,1.1693101198924727
+7,Orhan Moser,['EN'],Freelancer,['Contract'],18,142,0.58,0.5,1,7,23,10,0,0.35777041935002546
+8,Maeva Meyer,['FR'],Comman Gilliéron Sàrl. Firm,['Banking and Finance'],146,35,0.7,4.0,0,21,7,11,1,3.043797597901598
+9,Labinot Fischer,"['DE', 'IT']","Schweizer, Favre and Meyer Attorneys","['Property (Real Estate)', 'Tort']",62,38,0.43,0.0,1,2,22,34,0,-0.1577750768486555
+10,Josiane Weber,"['DE', 'IT']",Grojean Bourquin SA Legal Firm,['Consumer Protection'],55,135,0.27,2.0,0,20,20,57,0,1.4130452567939484
+11,Georges Schneider,"['DE', 'IT']",Monnet Legal Group,['Contract'],84,70,0.45,0.5,0,24,12,11,0,0.574262919606783
+12,Severin Chevrolet,"['DE', 'EN', 'FR', 'IT']","Kunz, Erni and Friedli Legal Firm",['Contract'],55,84,0.26,2.0,1,1,7,27,0,1.0777632679666316
+13,Andrzej Frei,"['DE', 'EN', 'IT']",Chopard SA Legal Firm,"['Employment and Labor', 'Property (Real Estate)']",4,141,0.27,4.5,0,23,8,34,0,3.1588174093812498
+14,Tomas Hess,"['DE', 'FR', 'IT']",Meyer Inc Legal Firm,"['Insurance', 'Property (Real Estate)', 'Tort']",69,140,0.51,2.0,1,15,26,25,0,1.4706160126629053
+15,Yara Cosendey,"['EN', 'FR']",Frei-Keller Legal Group,"['Consumer Protection', 'Privacy and Data Protection', 'Tort']",98,43,0.75,2.5,1,4,22,31,0,1.7629622401740257
+16,Reinhard Barillon,"['DE', 'IT']",Hauser-Steiner Law Group,"['Contract', 'Employment and Labor']",144,50,0.76,0.5,0,20,16,4,0,0.6912284197610195
+17,Tanja Marti,"['DE', 'EN', 'FR']","Schmidt, Fischer and Lustenberger Legal Group","['Contract', 'Privacy and Data Protection']",53,89,0.55,0.0,1,1,27,53,0,-0.1029944809879732
+18,André Joye,"['DE', 'EN', 'FR', 'IT']",Freelancer,"['Banking and Finance', 'Commercial and Business', 'Inheritance and Succession']",15,88,0.61,4.0,0,6,16,56,1,2.7297623627809453
+19,Thomas Stöckli,['EN'],Rapin Humbert SA Legal Firm,['Insurance'],119,65,0.69,3.0,1,21,11,47,1,2.360275682778905
+20,Mehdi Beuchat,['EN'],Sandoz SA Law,"['Contract', 'Employment and Labor']",92,35,0.61,2.0,0,17,29,31,0,1.5653685875185255
+21,René Bolliger,['EN'],Boichat Attorneys,"['Employment and Labor', 'Insurance']",5,77,0.09,0.0,1,2,9,59,0,-0.36208884342564024
+22,Josiane Wüthrich,"['DE', 'EN', 'FR', 'IT']",Cosandey ,"['Employment and Labor', 'Intellectual Property']",80,139,0.45,3.0,0,24,15,4,0,2.2680446363416764
+23,Claudine Balmat,"['DE', 'IT']",Marti Legal Firm,['Employment and Labor'],57,50,0.88,2.0,0,6,15,38,0,1.5369861569688714
+24,Jonathan Bavaud,"['FR', 'IT']",Schenk-Kunz Legal Firm,['Insurance'],120,123,0.46,3.0,1,14,3,65,0,2.100752411929052
+25,Eloïse Diesbach,"['DE', 'FR']",de Dardel SA Law Group,"['Banking and Finance', 'Consumer Protection']",50,132,0.78,0.5,1,14,23,9,0,0.5992660049136738
+26,Antonio Aebi,"['EN', 'FR', 'IT']",Betschart-Stalder Firm,['Family'],19,113,0.55,0.0,1,11,6,67,0,0.0703069718533858
+27,Marine Favre,['EN'],Freelancer,"['Family', 'Tort']",56,52,0.37,2.0,0,20,20,6,0,1.4731375410812968
+28,Léa Droz,"['DE', 'FR', 'IT']",Freelancer,"['Commercial and Business', 'Intellectual Property']",42,60,0.66,1.5,0,18,29,49,0,1.2739885315993569
+29,Can Mottet,"['EN', 'FR', 'IT']",Beuret SA Legal Group,"['Banking and Finance', 'Consumer Protection', 'Inheritance and Succession']",8,107,0.08,1.0,1,8,1,21,0,0.4133954865443979
+30,Chloé Chevrolet,"['DE', 'FR', 'IT']",Chaudet Niquille Sàrl. ,"['Inheritance and Succession', 'Property (Real Estate)']",97,58,0.19,2.5,0,8,2,51,0,1.4957660293014177
+31,Eva Roth,['FR'],"Bieri, Wegmann and Wagner Law","['Commercial and Business', 'Intellectual Property', 'Property (Real Estate)']",99,33,0.16,4.0,0,15,26,67,0,2.6153183910451006
+32,Isabelle Stocker,"['DE', 'EN']",Chevrolet Law Firm,"['Employment and Labor', 'Insurance', 'Tort']",32,121,0.95,3.5,0,14,27,9,1,2.7339609482840386
+33,Maja Tanner,"['DE', 'EN', 'FR', 'IT']",Hess PLC Law Group,"['Commercial and Business', 'Consumer Protection', 'Intellectual Property']",113,52,0.87,4.5,1,13,4,11,1,3.3460696622639814
+34,Ernst Droz,"['DE', 'EN', 'FR', 'IT']","Burri, Winkler and Furrer Legal Firm","['Contract', 'Employment and Labor', 'Family']",127,79,0.88,2.5,1,14,29,61,0,2.0143836625889375
+35,Ariana Julliard,['IT'],Robadey SA ,['Employment and Labor'],104,57,0.17,1.5,0,19,14,24,0,0.9968664838754853
+36,Jolanda Grosjean,"['DE', 'EN', 'FR', 'IT']",Bonvini Menthonnex Sàrl. Law,"['Family', 'Insurance', 'Property (Real Estate)']",95,68,0.11,3.0,0,17,22,39,0,1.9424198527757401
+37,Giada Blum,"['EN', 'FR', 'IT']",Lustenberger LLC Firm,"['Contract', 'Intellectual Property', 'Privacy and Data Protection']",70,140,0.8,0.0,1,4,23,8,0,0.09922666558280574
+38,Véronique Droz,"['FR', 'IT']",Knecht Group Attorneys,"['Banking and Finance', 'Family', 'Property (Real Estate)']",64,49,0.2,0.5,0,18,1,22,0,0.3200513371835963
+39,Eliane Leunberger,"['DE', 'FR']",Godet Legal Firm,"['Commercial and Business', 'Contract']",13,102,0.21,2.5,1,5,12,50,0,1.4557940503064797
+40,Elias Pasquier,"['EN', 'FR', 'IT']",Freelancer,['Family'],131,60,0.87,3.0,0,15,13,23,1,2.3644609227913165
+41,Elisa Badan,['DE'],"Hirt, Pfister and Bernasconi Attorneys","['Consumer Protection', 'Privacy and Data Protection']",54,118,0.0,2.0,0,6,9,6,0,1.008174055240205
+42,Claude Julliard,"['DE', 'FR', 'IT']","Gasser, Mettler and Grob Law",['Banking and Finance'],40,131,0.55,0.0,1,8,1,16,0,0.0183165360009781
+43,Benedikt Seiler,"['DE', 'EN']",Geiger Group Law Group,"['Employment and Labor', 'Intellectual Property', 'Privacy and Data Protection']",56,30,0.52,3.0,1,12,20,15,1,2.1021474919331897
+44,Corinne Steinmann,"['DE', 'EN']","Schaller, Fankhauser and Lanz Legal Firm","['Family', 'Privacy and Data Protection', 'Tort']",87,90,0.93,3.5,0,5,18,10,1,2.5659711838693458
+45,Vanessa Kunz,"['DE', 'EN', 'FR', 'IT']",Stucki LLC Law Firm,"['Consumer Protection', 'Family']",143,48,0.17,2.5,0,1,4,52,0,1.3624365554549969
+46,Lorin Humbert,['DE'],Besançon Sàrl. Attorneys,"['Insurance', 'Privacy and Data Protection']",26,69,0.46,4.0,0,19,18,34,0,2.8649158250436892
+47,Andri Carraud,"['EN', 'FR', 'IT']",Hirt LLC Law Firm,"['Consumer Protection', 'Tort']",31,45,0.48,2.5,1,22,2,24,0,1.912655687712631
+48,Gian-Luca Babey,"['DE', 'EN', 'FR']",Thommen LLC Law Firm,"['Family', 'Privacy and Data Protection', 'Tort']",132,142,0.31,4.0,0,3,5,34,0,2.4974950740664923
+49,Visar Ferrari,['EN'],Aebi Attorneys,"['Consumer Protection', 'Employment and Labor', 'Intellectual Property']",64,139,0.64,2.0,1,7,23,13,0,1.410094819963371
+50,Theresa Brandt,"['DE', 'EN', 'FR', 'IT']",Beuret Legal Group,"['Intellectual Property', 'Property (Real Estate)', 'Tort']",117,92,0.32,3.5,1,16,24,5,0,2.390039847842015
