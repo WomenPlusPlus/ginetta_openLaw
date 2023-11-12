@@ -10,7 +10,7 @@ const LawyerCard = ({
     imageUrl 
 } : {
     name: string
-    specialty_areas: string
+    specialty_areas: string[]
     N_experience: number
     language: string[]
     Price_per_hour: number
