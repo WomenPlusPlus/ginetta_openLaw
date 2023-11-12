@@ -8,7 +8,7 @@ export default async function Lawyers({
   } : {
     params: { user: string }
   }): Promise<JSX.Element> {
-    const { rows } = await sql`SELECT * from lawyer order by scores desc LIMIT 4`;
+    const { rows } = await sql`SELECT name, specialty_areas, N_experience, language, Price_per_hour, review from lawyer order by scores desc LIMIT 4`;
   
     return (
         <div className="text-center">
