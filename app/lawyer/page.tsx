@@ -28,7 +28,7 @@ export default async function Lawyers({
             <div className="flex flex-wrap justify-center">
                 {rows.map((lawyer, index) => (
                     <div className="mx-4 mb-4" key={index}>
-                        <LawyerCard {...lawyer} />
+                        <LawyerCard id={0} name={''} language={[]} employed_type={''} specialty_areas={[]} location_km={0} price_per_hour={0} winning_rate={0} review={0} provono={0} n_experience={0} earlist_available_within_n_day={0} average_response_hour={0} y={0} scores={0} {...lawyer} />
                     </div>
                 ))}
             </div>
