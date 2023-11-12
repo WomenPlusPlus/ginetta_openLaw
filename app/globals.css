@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  font-family: "Roboto", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbutton {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 30px;
+}
