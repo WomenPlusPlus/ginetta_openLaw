@@ -2,31 +2,33 @@ import '../globals.css'
 import { sql } from '@vercel/postgres'
 
 import LawyerCard from './components/LawyerCard'
+import LawyerSearch from './components/LawyerSearch';
+import { useSearchParams } from 'next/navigation';
 
 export default async function Lawyers({
-    params
+    searchParams
   } : {
-    params: { user: string }
+    searchParams?: { 
+        query?: string
+        page?: string
+     }
   }): Promise<JSX.Element> {
-    const { rows } = await sql`SELECT * from lawyer order by scores desc LIMIT 4`;
+    const { rows } = await sql`SELECT * from lawyer order by scores desc`;
+    const query = searchParams?.query || ''
+    const currentPage = Number(searchParams?.page || 1)
+
+    const filteredLawyers = rows.filter((lawyer) =>
+    lawyer.name.toLowerCase().includes(query.toLowerCase())
+    )
   
     return (
         <div className="text-center">
             <h1 className="text-4xl font-bold mb-10">Lawyers</h1>
             <div className="relative mb-3" data-te-input-wrapper-init>
-                <input
-                    type="search"
-                    className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleSearch2"
-                    placeholder="Type query" />
-                <label
-                    htmlFor="exampleSearch2"
-                    className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                    >Search...</label
-                >
+                <LawyerSearch />
             </div>
             <div className="flex flex-wrap justify-center">
-                {rows.map((lawyer, index) => (
+                {filteredLawyers.map((lawyer, index) => (
                     <div className="mx-4 mb-4" key={index}>
                         <LawyerCard id={0} name={''} language={[]} employed_type={''} specialty_areas={[]} location_km={0} price_per_hour={0} winning_rate={0} review={0} provono={0} n_experience={0} earlist_available_within_n_day={0} average_response_hour={0} y={0} scores={0} {...lawyer} />
                     </div>
