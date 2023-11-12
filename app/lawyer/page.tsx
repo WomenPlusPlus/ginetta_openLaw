@@ -25,10 +25,10 @@ export default async function Lawyers({
                     >Search...</label
                 >
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
                 {rows.map((lawyer, index) => (
-                    <div className="mx-4 mb-4">
-                        <LawyerCard key={index} {...lawyer} />
+                    <div className="mx-4 mb-4" key={index}>
+                        <LawyerCard {...lawyer} />
                     </div>
                 ))}
             </div>
