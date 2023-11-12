@@ -8,7 +8,7 @@ export default function LawyerSearch() {
     const { replace } = useRouter()
 
     // allow search with multiple parameters
-    function handleSearch(term: string[]) {
+    function handleSearch(term: string) {
         const params = new URLSearchParams(searchParams)
 
         if (term.includes(":")) {
