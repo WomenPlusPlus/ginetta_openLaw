@@ -10,7 +10,7 @@ export default async function Lawyers({
   } : {
     searchParams?: { 
         name?: string
-        language?: string[]
+        language?: string
         page?: string
      }
   }): Promise<JSX.Element> {
@@ -21,7 +21,7 @@ export default async function Lawyers({
 
     const filteredLawyers = rows.filter((lawyer) => {
         const nameMatches = !name || lawyer.name.toLowerCase().includes(name.toLowerCase());
-        const languageMatches = !language || lawyer.language.some(lang => lang.toLowerCase() === language.toLowerCase());
+        const languageMatches = !language || lawyer.language.some((lang: string) => lang.toLowerCase() === language.toLowerCase());
     
         // Add more conditions as needed
     
