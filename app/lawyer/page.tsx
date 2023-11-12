@@ -30,7 +30,7 @@ export default async function Lawyers({
       
     return (
         <div className="text-center">
-            <h1 className="text-4xl font-bold mb-10">Lawyers</h1>
+            <h1 className="text-4xl font-bold mb-10 mt-2">Lawyers</h1>
             <div className="relative mb-3" data-te-input-wrapper-init>
                 <LawyerSearch/>
             </div>
