@@ -1,16 +1,19 @@
-# AI Swiss Legal Assistant 🇨🇭 👩‍⚖️ 🤖
+# Open Law 🇨🇭 👩‍⚖️ 🤖
 
-This is a simple conversational-ui RAG (retrieval augmented generation) based on the Swiss Code of Obligations.
+OpenLaw is an innovative web application designed to offer free, clear, and accessible legal advice for residents across Switzerland.
 
-> It was created a starting point of the Ginetta Challenge at the women++ [Hack'n'Lead hackathon](www.womenplusplus.ch/hackandlead) November 2023
+Featuring a sophisticated chatbot, OpenLaw breaks down language barriers by leveraging a multilingual language model. This makes it an invaluable resource for understanding complex legal matters, tailored to the diverse linguistic landscape of Switzerland.
 
-## ℹ️ Instructions
+It features widgets such as **lawyer recommendations** and a **community** page where users can get additional feedback and advice from other users. Our goal is to decentralize legal knowledge for we understand the complexities of the Swiss judicial and legal system.
 
-1. Use this repository as a template (or Fork it)
-2. Add your team members as contributors
-3. Put your presentation in the `docs/` folder
-4. This repository **must** be open source (and licensed) in order to submit
-5. Add the tag `hack-n-lead` to the repo description
+- Chatbot: This is a simple conversational-ui RAG (retrieval augmented generation) based on the Swiss Code of Obligations. A user can query about specific provisions about the Swiss Code of Obligations, which would then summarize the response into simple language.
+
+- Lawyer Recommendation: For further information and quotations for an initial assessment, the user may then need to consult a lawyer using the "lawyer recommendation" widget. It would then bring the user to a page where one can filter lawyers based on the user geographical location and budget.
+
+- Community Platform: We are also implementing a community platform which connects the user to others facing a similar predicament for community support.
+
+- FAQ's: An FAQ section that provides the most frequent queries from users and its corresponding response.
+Legal Protection Insurance Recommendation: Understanding that legal action may be expensive and beyond reach for most, we are implementing a widget that recommends legal protection insurances offered by selected insurance companies.
 
 ## ▶️ Setup
 
@@ -34,28 +37,6 @@ There is two different ways to setup this project:
 
 Both Option 1 and 2 continue with the following setup:
 
-### 💾 Setup Qdrant Vector Database
-
-1. Open the Qdrant dashboard console <http://localhost:6333/dashboard#/console>
-1. Create a new collection running this:
-   ```curl
-   PUT collections/swiss-or
-   {
-     "vectors": {
-       "size": 384,
-       "distance": "Cosine"
-     }
-   }
-   ```
-1. Download the [snapshot file](https://huggingface.co/datasets/brunnolou/swiss-code-of-obligations/resolve/main/swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25_qdrant-v1-6-1.snapshot.zip)
-1. Unzip the file using the terminal (⚠️ **_not with Finder on Mac_** ⚠️) with `unzip <file_name>`
-1. Upload the file using the following command. Adapt the fields accordingly and run it from the same directory, as where your snapshot lies
-
-```shell
-curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
-    -H 'Content-Type:multipart/form-data' \
-    -F 'snapshot=@swiss-code-of-obligations-articles-gte-small-2023-10-18-12-13-25.snapshot'
-```
 
 ## 👩🏽‍💻 Run the App
 
@@ -63,13 +44,3 @@ curl -X POST 'http://localhost:6333/collections/swiss-or/snapshots/upload' \
 1. `yarn install` to install the required dependencies
 1. `yarn dev` to launch the development server
 1. Go to <http://localhost:3000> and try out the app
-
-## 👩🏽‍🏫 Learn More
-
-To learn more about LangChain, OpenAI, Next.js, and the Vercel AI SDK take a look at the following resources:
-
-- [LangChain Documentation](https://js.langchain.com/docs) - learn about LangChain
-- [Ollama](https://ollama.ai/) - learn about Ollama features, models, and API
-- [Qdrant Documentation](https://qdrant.tech/documentation/) - learn about Qdrant
-- [Vercel AI SDK docs](https://sdk.vercel.ai/docs) - learn mode about the Vercel AI SDK
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
