@@ -20,10 +20,51 @@ export default function WidgetBoard() {
         <div className="grid grid-cols-3 gap-10">
           <div className="column flex flex-col place-content-between">
             {/* first card */}
-            <Card height="250px" width="100%"></Card>
+            <Card height="250px" width="100%">
+              Community Support
+            </Card>
             <div className="flex flex-row place-content-between">
               {/* second card lawyers */}
-              <Card height="200px" width="45%">
+              <Link href="/lawyer" className="p-0 m-0 w-5/12">
+                <Card height="200px" width="100%">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap", // Enables Flexbox
+                      justifyContent: "center", // Centers horizontally
+                      height: "100%", // Take full height of the Card
+                      width: "100%", // Take full width of the Card
+                    }}
+                  >
+                    <div
+                      style={{
+                        marginTop: "10%",
+                        height: "100px", // Circle size
+                        width: "100px", // Circle size
+                        backgroundColor: "white", // Circle color
+                        borderRadius: "50%", // Makes the div circular
+                        backgroundImage: "url('lawyer1.jpg')",
+                        backgroundSize: "cover",
+                      }}
+                    ></div>
+                    Larence Crittin
+                    <Rating
+                      name="read-only"
+                      value={4}
+                      readOnly
+                      precision={0.5}
+                      sx={{
+                        "& .MuiRating-iconFilled": {
+                          color: "#ffeb3b", // Example of a brighter yellow
+                        },
+                        // Or use a specific yellow color code like '#ffd700'
+                      }}
+                    />
+                  </div>
+                </Card>
+              </Link>{" "}
+              {/* third card insurance */}
+              <Card height="200px" width="42%">
                 <div
                   style={{
                     display: "flex",
@@ -39,28 +80,14 @@ export default function WidgetBoard() {
                       height: "100px", // Circle size
                       width: "100px", // Circle size
                       backgroundColor: "white", // Circle color
-                      borderRadius: "50%", // Makes the div circular
-                      backgroundImage: "url('lawyer1.jpg')",
+                      // borderRadius: "100%", // Makes the div circular
+                      backgroundImage: "url('AXA.png')",
                       backgroundSize: "cover",
                     }}
                   ></div>
-                  Larence Crittin
-                  <Rating
-                    name="read-only"
-                    value={4}
-                    readOnly
-                    precision={0.5}
-                    sx={{
-                      "& .MuiRating-iconFilled": {
-                        color: "#ffeb3b", // Example of a brighter yellow
-                      },
-                      // Or use a specific yellow color code like '#ffd700'
-                    }}
-                  />
+                  <div className="text-center">Get a quotation now!</div>
                 </div>
               </Card>
-              {/* third card insurance */}
-              <Card height="200px" width="45%"></Card>
             </div>
           </div>
 
@@ -75,8 +102,12 @@ export default function WidgetBoard() {
           </div>
 
           <div className="column flex flex-col place-content-between">
-            <Card height="150px" width="100%"></Card>
-            <Card height="300px" width="100%"></Card>
+            <Card height="150px" width="100%">
+              Profile
+            </Card>
+            <Card height="300px" width="100%">
+              FAQ's
+            </Card>
           </div>
         </div>
       </div>
