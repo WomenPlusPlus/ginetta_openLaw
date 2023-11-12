@@ -402,15 +402,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/swc-linux-x64-gnu@14.0.3-canary.4":
+"@next/swc-darwin-arm64@14.0.3-canary.4":
   version "14.0.3-canary.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.0.3-canary.4.tgz"
-  integrity sha512-bLK8nPBNGkeRfdJkx1v6hC7PZejIuPc4bxmVwxJYLO3PStFgli049pdZ43TMiVXB/xvxKGnc0/6xh9jCdaPjhQ==
-
-"@next/swc-linux-x64-musl@14.0.3-canary.4":
-  version "14.0.3-canary.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.0.3-canary.4.tgz"
-  integrity sha512-XzmQn6Iyrj1zj6tXDyzlFNei6BrH1BP07oK4LcBtwHdbPWuFT1ntcoKF2s3c0DNREUbHQJncqlUsr4POB5jWrg==
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.3-canary.4.tgz"
+  integrity sha512-bztAmWXJ3fk6bijoz0DX4t6ubj8kpyK2MXPpY+O6Vq6lKeNM6Jte40hDzS0bYUTjVI9zC66AW+P9RumBMZwQZw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2028,6 +2023,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1:
   version "1.1.2"

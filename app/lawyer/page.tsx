@@ -9,23 +9,30 @@ export default async function Lawyers({
     searchParams
   } : {
     searchParams?: { 
-        query?: string
+        name?: string
+        language?: string[]
         page?: string
      }
   }): Promise<JSX.Element> {
     const { rows } = await sql`SELECT * from lawyer order by scores desc`;
-    const query = searchParams?.query || ''
+    const name = searchParams?.name || ''
+    const language = searchParams?.language || ''
     const currentPage = Number(searchParams?.page || 1)
 
-    const filteredLawyers = rows.filter((lawyer) =>
-    lawyer.name.toLowerCase().includes(query.toLowerCase())
-    )
-  
+    const filteredLawyers = rows.filter((lawyer) => {
+        const nameMatches = !name || lawyer.name.toLowerCase().includes(name.toLowerCase());
+        const languageMatches = !language || lawyer.language.some(lang => lang.toLowerCase() === language.toLowerCase());
+    
+        // Add more conditions as needed
+    
+        return nameMatches && languageMatches;
+      });
+      
     return (
         <div className="text-center">
             <h1 className="text-4xl font-bold mb-10">Lawyers</h1>
             <div className="relative mb-3" data-te-input-wrapper-init>
-                <LawyerSearch />
+                <LawyerSearch/>
             </div>
             <div className="flex flex-wrap justify-center">
                 {filteredLawyers.map((lawyer, index) => (
