@@ -1,14 +1,5 @@
 import '../../globals.css'
 
-interface ILawyerCard {
-    name: string
-    specialty_areas: string[]
-    N_experience: number
-    language: string[]
-    Price_per_hour: number
-    review: number
-}
-
 const LawyerCard: React.FC<ILawyerCard> = ({ 
     name,
     specialty_areas,
