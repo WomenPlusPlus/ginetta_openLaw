@@ -3,13 +3,12 @@ import '../../globals.css'
 const LawyerCard: React.FC<ILawyerCard> = ({ 
     name,
     specialty_areas,
-    N_experience,
+    n_experience,
     language,
-    Price_per_hour,
+    price_per_hour,
     review 
 }
 ) => {
-    console.log(N_experience)
     return (
         <div className="bg-white rounded-md p-5 shadow-lg mb-5 flex flex-col justify-between" style={{maxWidth : '300px', minHeight : '400px'}}>
             <div className="flex items-center justify-center mb-4 bg-gray-100 p-2">
@@ -25,8 +24,8 @@ const LawyerCard: React.FC<ILawyerCard> = ({
                 <p className="text-gray-600 mb-2">{`Languages: ${language.join(', ')}`}</p>
             </div>
             <div className="mt-auto pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{`${N_experience ?? 0} years`}</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{`${Price_per_hour ?? 0} CHF/h`}</span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{`${n_experience ?? 0} years`}</span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{`${price_per_hour ?? 0} CHF/h`}</span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{`Review: ${review}/5`}</span>
             </div>
         </div>
