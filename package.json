@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@qdrant/js-client-rest": "^1.6.0",
+    "@vercel/postgres": "^0.5.1",
     "@xenova/transformers": "^2.7.0",
     "ai": "^2.2.21",
     "encoding": "^0.1.13",
