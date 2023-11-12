@@ -8,7 +8,16 @@ const LawyerCard = ({
     Price_per_hour,
     review,
     imageUrl 
-}) => {
+} : {
+    name: string
+    specialty_areas: string
+    N_experience: number
+    language: string[]
+    Price_per_hour: number
+    review: number
+    imageUrl: string
+}
+) => {
     console.log(N_experience)
     return (
         <div className="bg-white rounded-md p-5 shadow-lg mb-5 flex flex-col justify-between" style={{maxWidth : '300px', minHeight : '400px'}}>
